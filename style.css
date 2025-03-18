@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background-color: azure;
+}
+
+header {
+    background-color: azure;
+    padding: 10px 20px;
+    /* box-shadow: 0cap 4px; */
+    border: 1px solid #ccc;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.loginSignin {
+    list-style: none;
+    display: flex;
+}
+
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.loginSignin li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: brown; 
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.loginSignin a {
+    color: brown;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.tombol {
+    font-family: montserrat;
+}
+
+.container {
+    display: flex;
+}
+
+.kolomKiri {
+    font-size: 20px;
+    flex: 3;
+    padding: 60px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    background-color: f9f9f9;
+}
+
+.kolomKanan {
+    flex: 2;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    background-color: f9f9f9;
+}
+
+footer {
+    background-color: brown;
+    padding: 10px 20px;
+    padding: 0;
+    text-align: center;
+    color: aliceblue;
+}
+
+.kolomKanan {
+    align-items: center;
+    align-content: center;
+}
+
+.kolomKanan img {
+    align-items: center;
+    display: flex;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 4px 4px #ccc;
+    outline: 10px;
+}
+
+.listProduct {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.card {
+    width: calc(20% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    aspect-ratio: 1 / 1; 
+    border-bottom: 1px solid #ccc;
+}
+
+.card .description {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.loginPage {
+    width: 20%;
+    max-width: 800px;
+    margin: 150px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.loginPage h3 {
+    text-align: center;
+}
+
+.text {
+    font-weight: 500;
+}
+
+.loginPage label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.loginPage input[type="text"],
+.loginPage input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.loginPage input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.loginPage input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.table-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; 
+}
+
+table {
+    outline: 1px solid #000;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #000; 
+    padding: 8px; 
+    text-align: left;
+
+/* .about p {
+    padding: 20px;
+    font-weight: lighter;
+    text-align: justify;
+} */
